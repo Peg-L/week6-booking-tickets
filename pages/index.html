@@ -1,19 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>7TAO 活動訂票網</title>
+	</head>
+	<body>
+		<%- include('./layout/navbar'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+		<div class="container">
+			<div class="row">
+				<div>
+					<div
+						class="banner-img text-white d-flex flex-column justify-content-between align-items-center mt-8">
+						<h2 class="display-4 align-self-start pt-12 ps-12">19 MAY 2023</h2>
+						<div class="text-center">
+							<h3 class="fs-2 fw-bold mb-4">隔牆有耳-沒有草東的派對</h3>
+							<p class="fs-5 m-0 pb-6">
+								你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br />
+								帶上啤酒、野餐墊，讓我們在 Live House
+								外面一起開場「沒有草東的派對」吧！
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <%- include('./layout/footer'); -%>
+			<div class="row category my-12 text-center">
+				<div class="col">
+					<div
+						class="list-item border border-2 border-primary d-flex flex-column align-items-center justify-content-center">
+						<img class="mb-3" src="../assets/images/cate01.svg" alt="演出" />
+						<h4 class="fs-2 fw-bold m-0">演出</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="list-item border border-2 border-primary d-flex flex-column align-items-center justify-content-center">
+						<img class="mb-3" src="../assets/images/cate02.svg" alt="聯誼" />
+						<h4 class="fs-2 fw-bold m-0">聯誼</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="list-item border border-2 border-primary d-flex flex-column align-items-center justify-content-center">
+						<img class="mb-3" src="../assets/images/cate03.svg" alt="展覽" />
+						<h4 class="fs-2 fw-bold m-0">展覽</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="list-item border border-2 border-primary d-flex flex-column align-items-center justify-content-center">
+						<img class="mb-3" src="../assets/images/cate04.svg" alt="美食" />
+						<h4 class="fs-2 fw-bold m-0">美食</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="list-item border border-2 border-primary d-flex flex-column align-items-center justify-content-center">
+						<img class="mb-3" src="../assets/images/cate05.svg" alt="戶外" />
+						<h4 class="fs-2 fw-bold m-0">戶外</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div
+						class="list-item border border-2 border-primary bg-primary text-secondary d-flex flex-column align-items-center justify-content-center">
+						<h4 class="fw-bold m-0 display-5">探索<br />更多</h4>
+					</div>
+				</div>
+			</div>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+			<div>
+				<div
+					class="d-flex justify-content-between align-items-center py-6 px-8 border border-3 border-primary">
+					<h2 class="display-3">RECENT</h2>
+					<h3 class="fs-1">近期活動</h3>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>

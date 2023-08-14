@@ -1,0 +1,21 @@
+.logo {
+	width: 53px;
+}
+
+.search-input {
+	width: 335px;
+
+	button {
+		width: 51px;
+	}
+}
+
+.icofont-search-1 {
+	font-size: 19px;
+}
+
+@media (max-width: 768px) {
+	.search-input {
+		width: 207px;
+	}
+}
