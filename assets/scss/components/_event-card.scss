@@ -1,0 +1,103 @@
+.event-card {
+	display: flex;
+	flex-direction: column;
+
+	h4 {
+		font-style: 32px;
+		padding-bottom: 8px;
+		border-bottom: 3px solid $primary;
+
+		@include sm {
+			font-size: 40px;
+		}
+
+		@include md {
+			font-size: 48px;
+			padding-bottom: 12px;
+		}
+	}
+
+	&-img {
+		margin-top: 16px;
+		margin-bottom: 8px;
+
+		height: 210px;
+		width: 100%;
+		object-fit: cover;
+
+		@include sm {
+		}
+
+		@include md {
+			margin-top: 12px;
+			margin-bottom: 12px;
+			height: 255px;
+		}
+	}
+
+	h3 {
+		font-size: 18px;
+		margin-bottom: 8px;
+		font-weight: bold;
+
+		@include sm {
+			font-size: 20px;
+		}
+
+		@include md {
+			font-size: 24px;
+			margin-bottom: 12px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 16px;
+		flex-grow: 1;
+	}
+
+	&-footer {
+		border-top: 2px solid $primary;
+		border-bottom: 2px solid $primary;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 8px;
+		padding-bottom: 8px;
+
+		@include md {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		&-left {
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 20px;
+				margin-right: 4px;
+
+				@include md {
+					width: 24px;
+				}
+			}
+
+			span {
+				font-size: 16px;
+				font-weight: bold;
+				font-family: "Noto Serif TC", serif;
+			}
+		}
+
+		&-seemore {
+			font-size: 16px;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+
+			i {
+				margin-left: 4px;
+			}
+		}
+	}
+}

@@ -3,29 +3,22 @@
 	background: url("../images/event/13.jpg") no-repeat center / cover;
 }
 
-.sparkler {
-	width: 20px;
-}
-
 .category {
 	img {
 		width: 40px;
 	}
 
-	a:hover {
-		background-color: $secondary;
-		color: $primary;
+	a {
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			background-color: $secondary !important;
+			color: $primary !important;
+		}
 	}
 
 	.list-item {
 		aspect-ratio: 1;
 	}
-}
-
-img.event-img {
-	height: 210px;
-	width: 100%;
-	object-fit: cover;
 }
 
 .online {
@@ -90,10 +83,6 @@ img.event-img {
 
 // rwd
 @include md {
-	.sparkler {
-		width: 24px;
-	}
-
 	.banner-img {
 		height: 518px;
 	}
@@ -102,10 +91,6 @@ img.event-img {
 		img {
 			width: 80px;
 		}
-	}
-
-	img.event-img {
-		height: 255px;
 	}
 }
 

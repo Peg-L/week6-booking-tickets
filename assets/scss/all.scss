@@ -17,15 +17,18 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./reboot";
 
 @import "./utils/mixins";
 @import "./utils/font";
+
 @import "./layout/navbar.scss";
 @import "./layout/footer.scss";
+
+// 元件
 @import "./components/block-title";
 @import "./components/tag";
 @import "./components/pagination";
+@import "./components/event-card";
 
 @import "./pages/index";
 @import "./pages/event";
