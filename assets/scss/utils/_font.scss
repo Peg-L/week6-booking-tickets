@@ -1,0 +1,43 @@
+$max: 40;
+
+@for $i from 0 through $max {
+	.fs-#{$i} {
+		font-size: $i * 2px !important;
+	}
+}
+
+// 576px
+@include sm {
+	@for $i from 0 through $max {
+		.fs-sm-#{$i} {
+			font-size: $i * 2px !important;
+		}
+	}
+}
+
+// 768px
+@include md {
+	@for $i from 0 through $max {
+		.fs-md-#{$i} {
+			font-size: $i * 2px !important;
+		}
+	}
+}
+
+// 992px
+@include lg {
+	@for $i from 0 through $max {
+		.fs-lg-#{$i} {
+			font-size: $i * 2px !important;
+		}
+	}
+}
+
+// font family
+.ff-sans {
+	font-family: "Noto Sans TC", sans-serif !important;
+}
+
+.ff-serif {
+	font-family: "Noto Serif TC", serif !important;
+}

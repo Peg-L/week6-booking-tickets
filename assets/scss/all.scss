@@ -1,6 +1,13 @@
 // font
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&family=Yeseva+One&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+// ICON
 @import "../scss/icofont/icofont.min.css";
 
 // bootstrap
@@ -10,8 +17,14 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./reboot";
 
+@import "./utils/mixins";
+@import "./utils/font";
 @import "./layout/navbar.scss";
 @import "./layout/footer.scss";
+@import "./components/block-title";
+@import "./components/tag";
 
-@import "./pages/index.scss";
+@import "./pages/index";
+@import "./pages/event";

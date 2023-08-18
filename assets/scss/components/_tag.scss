@@ -1,0 +1,18 @@
+.tag::before {
+	content: "";
+	display: block;
+	width: 4px;
+	height: 100%;
+	background-color: $primary;
+	border: 1px solid $primary;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.tag:hover {
+	&::before {
+		background-color: $secondary;
+		border: 1px solid $secondary;
+	}
+}

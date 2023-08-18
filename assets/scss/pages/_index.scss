@@ -1,14 +1,129 @@
 .banner-img {
+	height: 350px;
 	background: url("../images/event/13.jpg") no-repeat center / cover;
-	height: 518px;
+}
+
+.sparkler {
+	width: 20px;
 }
 
 .category {
+	img {
+		width: 40px;
+	}
+
+	a:hover {
+		background-color: $secondary;
+		color: $primary;
+	}
+
 	.list-item {
 		aspect-ratio: 1;
 	}
+}
+
+img.event-img {
+	height: 210px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.online {
+	height: 317px;
 
 	img {
-		width: 80px;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.scroll-text {
+	display: flex;
+	overflow: hidden;
+
+	p {
+		text-align: center;
+		transform: translateX(100%);
+	}
+
+	p {
+		animation: scroll 20s linear infinite;
+	}
+}
+
+.scroll-text-bottom {
+	p {
+		animation: scroll 25s linear infinite;
+	}
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.sticker {
+	position: absolute;
+	transform: translate(-50%, -36px) rotate(-4deg);
+	background-color: $white;
+	font-weight: bold;
+	font-family: "Noto Serif TC", serif;
+}
+
+.rotate2 {
+	transform: rotate(2deg);
+}
+
+.rotate-n2 {
+	transform: rotate(-2deg);
+}
+
+.card-img-top {
+	object-fit: cover;
+	aspect-ratio: 1;
+}
+
+// rwd
+@include md {
+	.sparkler {
+		width: 24px;
+	}
+
+	.banner-img {
+		height: 518px;
+	}
+
+	.category {
+		img {
+			width: 80px;
+		}
+	}
+
+	img.event-img {
+		height: 255px;
+	}
+}
+
+.recent {
+	a {
+		position: relative;
+		&:hover {
+			&::before {
+				content: "";
+				width: 29px;
+				height: 29px;
+				position: absolute;
+				background-color: $secondary;
+				z-index: -1;
+				top: -5px;
+				left: -10px;
+				border-radius: 50%;
+			}
+		}
 	}
 }

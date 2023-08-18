@@ -1,0 +1,14 @@
+.block-title {
+	border-width: 2px !important;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid $primary;
+	color: $primary;
+}
+
+@include md {
+	.block-title {
+		border-width: 3px !important;
+	}
+}

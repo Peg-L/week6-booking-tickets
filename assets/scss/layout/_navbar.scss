@@ -3,7 +3,10 @@
 }
 
 .search-input {
-	width: 335px;
+	width: 207px;
+	@include md {
+		width: 335px;
+	}
 
 	button {
 		width: 51px;
@@ -14,8 +17,8 @@
 	font-size: 19px;
 }
 
-@media (max-width: 768px) {
+@include md {
 	.search-input {
-		width: 207px;
+		max-width: 70%;
 	}
 }
