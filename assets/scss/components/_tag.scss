@@ -1,18 +1,45 @@
-.tag::before {
-	content: "";
-	display: block;
-	width: 4px;
-	height: 100%;
-	background-color: $primary;
-	border: 1px solid $primary;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
+.tag-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding-left: 0;
 
-.tag:hover {
-	&::before {
-		background-color: $secondary;
-		border: 1px solid $secondary;
+	li {
+		position: relative;
+		font-family: "Noto Serif TC", serif;
+		border: 1px solid $primary;
+
+		a {
+			font-size: 14px;
+			padding: 4px 16px;
+			display: block;
+
+			@include md {
+				font-size: 16px;
+				padding: 4px 24px;
+			}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 4px;
+			left: -1px;
+			top: -1px;
+			bottom: -1px;
+			background: $primary;
+		}
+
+		&:hover {
+			a {
+				color: $white;
+				background-color: $primary;
+				transition: all 0.3s ease-in-out;
+			}
+
+			&::before {
+				background: $secondary;
+			}
+		}
 	}
 }
