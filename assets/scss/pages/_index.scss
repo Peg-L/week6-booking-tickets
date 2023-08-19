@@ -31,6 +31,10 @@
 	}
 }
 
+.seemore:hover {
+	color: $secondary !important;
+}
+
 .scroll-text {
 	display: flex;
 	overflow: hidden;
